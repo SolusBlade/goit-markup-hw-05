@@ -54,7 +54,9 @@
       <!-- Герой -->
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="buttons">Замовити послугу</button>
+        <button type="button" class="buttons" data-modal-open>
+          Замовити послугу
+        </button>
       </section>
       <!-- Особливості -->
       <section class="section features">
@@ -122,6 +124,7 @@
                 alt="Робочий простір з клавіатурою та планшетом"
                 width="370"
                 height="294" />
+              <p class="item-overlay">Десктопні додатки</p>
             </li>
             <li class="list-items">
               <img
@@ -129,6 +132,7 @@
                 alt="Робочий простір з ноутбуком"
                 width="370"
                 height="294" />
+              <p class="item-overlay">Мобільні додатки</p>
             </li>
             <li class="list-items">
               <img
@@ -136,6 +140,7 @@
                 alt="Робочий простір з планшетом"
                 width="370"
                 height="294" />
+              <p class="item-overlay">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -429,5 +434,15 @@
         </div>
       </div>
     </footer>
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-form">
+        <button class="close-btn" data-modal-close>
+          <svg width="11" height="11" class="close-ico">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
