@@ -594,7 +594,7 @@ body .team{
     width: 100%;
     height: 100%;
     opacity: 1;
-    transition: opacity 250ms var(--animation-preset);
+    transition: opacity 250ms var(--animation-preset), visibility 250ms var(--animation-preset);
     
     background-color: rgba(0, 0, 0, 0.2);
 }
